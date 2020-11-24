@@ -24,7 +24,7 @@ LIBRARY_API long long csum(int n, int *array)
 
 LIBRARY_API double *add(double *a, double *b)
 {
-    double* res = new double[3];
+    double *res = new double[3];
 
     for (int i = 0; i < 3; ++i)
     {
