@@ -20,5 +20,5 @@ def add(a: list, b: list) -> list:
     a_p = (ctypes.c_double * 3)(*a) 
     b_p = (ctypes.c_double * 3)(*b) 
     r_p = csumlib.add(a_p,b_p)
-    print(r_p.contents)
+    #print(r_p.contents)
     return [l for l in r_p.contents]
