@@ -1,3 +1,5 @@
+[![Build](https://github.com/himbeles/ctypes-example/workflows/Build/badge.svg)](https://github.com/himbeles/ctypes-example/actions?query=workflow%3ABuild)
+
 # ctypes-example
 
 An example of a python package that builds a C++ extension via its `setup.py` script. 
