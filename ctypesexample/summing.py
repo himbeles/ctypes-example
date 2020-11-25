@@ -2,11 +2,14 @@ import ctypes
 import numpy
 import pathlib
 
-# find the shared library, the path depends on the platform and Python version
+# path of the shared library
 libfile = pathlib.Path(__file__).parent / "csumlib.so"
 csumlib = ctypes.CDLL(str(libfile))
 
 type_vec = ctypes.POINTER(ctypes.c_double * 3)
+
+
+# python function wrappers around the c++ functions
 
 csumlib.csum.restype = ctypes.c_longlong
 csumlib.csum.argtypes = [ctypes.c_int, numpy.ctypeslib.ndpointer(dtype=numpy.int32)]
