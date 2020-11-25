@@ -1,14 +1,15 @@
-https://nesi.github.io/perf-training/python-scatter/ctypes
+# ctypes-example
 
-python .\setup.py build --force --verbose
+A python package that builds a C++ extension via its `setup.py` script. 
 
 
+Installing the package via 
+```
+pip install .
+```
+automatically compiles the extension. 
 
-#include <Python.h>
 
-//https://stackoverflow.com/questions/34689210/error-exporting-symbol-when-building-python-c-extension-in-windows
-//void PyInit_csum() {}
-
-// PyMODINIT_FUNC PyInit_csum(void) {
-//     // do stuff...
-// }
+Some resources:
+- https://nesi.github.io/perf-training/python-scatter/ctypes
+- https://stackoverflow.com/questions/34689210/error-exporting-symbol-when-building-python-c-extension-in-windows
