@@ -1,6 +1,6 @@
 #ifdef _WIN32
 #define LIBRARY_API extern "C" __declspec(dllexport)
-#elif
+#else
 #define LIBRARY_API extern "C"
 #endif
 
