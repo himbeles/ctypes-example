@@ -1,6 +1,6 @@
 # ctypes-example
 
-A python package that builds a C++ extension via its `setup.py` script. 
+An example of a python package that builds a C++ extension via its `setup.py` script. 
 
 
 Installing the package via 
