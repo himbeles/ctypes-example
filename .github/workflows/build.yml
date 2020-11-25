@@ -17,7 +17,11 @@ jobs:
         name: Install Python
         with:
           python-version: '3.8'
-
+    
+      - name: Install requirements
+        run: |
+          pip install -U setuptools setuptools-scm wheel 
+          
       - name: Build wheels
         run: |
           pip wheel . -w ./wheelhouse
