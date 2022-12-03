@@ -25,8 +25,6 @@ class build_ext(build_ext_orig):
 
 
 setup(
-    name="ctypesexample",
-    version="1.0.0",
     py_modules=["ctypesexample.summing"],
     ext_modules=[
         CTypesExtension(
