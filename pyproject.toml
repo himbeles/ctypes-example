@@ -3,5 +3,5 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "1.0.0"
+name = "ctypes-example"
 version = "1.0.0"
